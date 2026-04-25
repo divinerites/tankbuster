@@ -3,7 +3,7 @@
  * © 2026 by Divinerites — GPL Licence
  *
  * Modules :
- *   SPLASH       — disparition après 5s
+ *   SPLASH       — disparition après 3s
  *   AUDIO        — Web Audio API (beeps + timeout)
  *   RING         — anneau SVG de progression
  *   TIMER        — logique countdown
