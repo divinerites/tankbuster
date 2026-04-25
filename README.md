@@ -12,6 +12,18 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 
 [![Star History Chart](https://api.star-history.com/svg?repos=divinerites/my-poker-shot-clock&type=Date)](https://star-history.com/#divinerites/my-poker-shot-clock&Date)
 
+## Fonctionnalités
+
+- ⏱ Shot clock configurable : 15 / 30 / 45 / 60 / 90 secondes
+- ⚡ Time Bank par joueur (0 / 15 / 30 / 60s)
+- 🎨 Couleurs progressives : vert → jaune → orange → rouge pulsant
+- 🔊 Alertes sonores Web Audio API (bips à 10s, 5s, timeout)
+- 📳 Vibration haptique (mobile)
+- 📊 Statistiques de session (joueurs, timeouts, moyenne)
+- 💾 Persistance des préférences via `localStorage`
+- 🌐 Bunny Fonts (RGPD, EU, zéro tracking Google)
+- WebApp installable sur l'écran d'accueil
+
 ## Structure
 
 ```txt
@@ -28,16 +40,15 @@ my-poker-shot-clock/
 └── README.md
 ```
 
-## Fonctionnalités
+## Application
 
-- ⏱ Shot clock configurable : 15 / 30 / 45 / 60 / 90 secondes
-- ⚡ Time Bank par joueur (0 / 15 / 30 / 60s)
-- 🎨 Couleurs progressives : vert → jaune → orange → rouge pulsant
-- 🔊 Alertes sonores Web Audio API (bips à 10s, 5s, timeout)
-- 📳 Vibration haptique (mobile)
-- 📊 Statistiques de session (joueurs, timeouts, moyenne)
-- 💾 Persistance des préférences via `localStorage`
-- 🌐 Bunny Fonts (RGPD, EU, zéro tracking Google)
+- Sources Github : https://github.com/divinerites/my-poker-shot-clock
+- Application : https://mypokershotclock.netlify.app/
+
+## WebApp
+
+- Sur Chrome/Android, tu verras “Ajouter à l’écran d’accueil” avec un comportement d’app fullscreen.
+- Sur iOS Safari, tu peux faire “Ajouter à l’écran d’accueil”
 
 ## Déploiement Netlify
 
