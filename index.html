@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>My Poker Shot Clock</title>
+<!-- Bunny Fonts — RGPD friendly, hébergé EU, aucun tracking Google -->
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=orbitron:400,700,900|inter:300,400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ═══════════════════════════ SPLASH ═══════════════════════════ -->
+<div id="splash">
+  <img
+    class="splash-logo"
+    src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/b389fa56-dd00-4372-bd19-c068337dcaa8.png"
+    alt="My Poker Shot Clock Logo"
+    width="140" height="140"
+    id="splashImg"
+  >
+  <div class="splash-title">Poker <span>Shot Clock</span></div>
+  <div class="splash-bar-wrap"><div class="splash-bar"></div></div>
+  <div class="splash-sub">Chargement…</div>
+  <div class="splash-copyright">
+    &copy; 2026 by Divinerites &nbsp;·&nbsp; GPL Licence<br>
+    Tous droits réservés
+  </div>
+</div>
+
+<!-- ═══════════════════════════ APP ═══════════════════════════ -->
+<div class="app">
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-inline">
+      <img
+        class="logo-img-small"
+        src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/b389fa56-dd00-4372-bd19-c068337dcaa8.png"
+        alt="Logo" width="28" height="28" loading="lazy"
+      >
+      <span class="logo-text">Shot Clock</span>
+    </div>
+    <button class="btn-settings" onclick="openSettings()" aria-label="Paramètres">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- CLOCK CARD -->
+  <div class="clock-card state-idle" id="clockCard">
+    <div class="phase-label" id="phaseLabel">En attente</div>
+    <div class="clock-wrap">
+      <svg class="clock-svg" viewBox="0 0 220 220">
+        <circle class="clock-track" cx="110" cy="110" r="105"/>
+        <circle class="clock-progress" id="clockProgress" cx="110" cy="110" r="105"/>
+      </svg>
+      <div class="clock-center">
+        <div class="clock-time" id="clockTime">30</div>
+        <div class="clock-sub">SECONDES</div>
+      </div>
+    </div>
+    <div class="timebank-section" id="timebankSection">
+      <div class="timebank-label">⚡ Time Bank</div>
+      <div class="timebank-display">
+        <div class="timebank-time" id="timebankDisplay">+30s</div>
+        <button class="btn-timebank" id="btnTimebank" onclick="useTimebank()">Utiliser</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <button class="btn-secondary" onclick="prevAction()" aria-label="Précédent">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    <button class="btn-main btn-start" id="btnMain" onclick="toggleClock()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="btnIcon"><polygon points="5,3 19,12 5,21"/></svg>
+      <span id="btnLabel">Démarrer</span>
+    </button>
+    <button class="btn-secondary" onclick="resetClock()" aria-label="Reset">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <polyline points="1 4 1 10 7 10"/>
+        <path d="M3.51 15a9 9 0 1 0 .49-4.95"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- NEXT PLAYER -->
+  <button class="btn-next" onclick="nextPlayer()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <path d="M5 12h14"/><path d="M12 5l7 7-7 7"/>
+    </svg>
+    Joueur suivant
+  </button>
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-value" id="statPlayers">0</div>
+      <div class="stat-label">Joueurs</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statTimeouts">0</div>
+      <div class="stat-label">Timeouts</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statAvg">—</div>
+      <div class="stat-label">Moy. (s)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="statActions">0</div>
+      <div class="stat-label">Actions</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <img
+      class="footer-logo"
+      src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/b389fa56-dd00-4372-bd19-c068337dcaa8.png"
+      alt="" width="16" height="16" loading="lazy" aria-hidden="true"
+    >
+    <span class="footer-text">&copy; 2026 by Divinerites &nbsp;·&nbsp; GPL Licence</span>
+  </div>
+</div>
+
+<!-- SETTINGS PANEL -->
+<div class="panel-overlay" id="panelOverlay" onclick="onOverlayClick(event)">
+  <div class="panel">
+    <div class="panel-handle"></div>
+    <div class="panel-title">⚙ Paramètres</div>
+    <div class="setting-group">
+      <label class="setting-label">Durée du Shot Clock</label>
+      <div class="setting-row" id="durationOptions">
+        <button class="btn-option" data-v="15" onclick="selectDuration(15)">15s</button>
+        <button class="btn-option active" data-v="30" onclick="selectDuration(30)">30s</button>
+        <button class="btn-option" data-v="45" onclick="selectDuration(45)">45s</button>
+        <button class="btn-option" data-v="60" onclick="selectDuration(60)">60s</button>
+        <button class="btn-option" data-v="90" onclick="selectDuration(90)">90s</button>
+      </div>
+    </div>
+    <div class="setting-group">
+      <label class="setting-label">Durée Time Bank</label>
+      <div class="setting-row" id="tbOptions">
+        <button class="btn-option" data-v="0" onclick="selectTimebank(0)">Aucun</button>
+        <button class="btn-option" data-v="15" onclick="selectTimebank(15)">15s</button>
+        <button class="btn-option active" data-v="30" onclick="selectTimebank(30)">30s</button>
+        <button class="btn-option" data-v="60" onclick="selectTimebank(60)">60s</button>
+      </div>
+    </div>
+    <div class="setting-group">
+      <label class="setting-label">Options</label>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-name">Sons d'alerte</div>
+          <div class="toggle-desc">Bips à 10s, 5s et timeout</div>
+        </div>
+        <div class="toggle on" id="toggleSound" onclick="toggleSetting('sound')"></div>
+      </div>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-name">Vibration</div>
+          <div class="toggle-desc">Feedback haptique sur mobile</div>
+        </div>
+        <div class="toggle on" id="toggleVibration" onclick="toggleSetting('vibration')"></div>
+      </div>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-name">Auto-démarrage</div>
+          <div class="toggle-desc">Lance le timer au joueur suivant</div>
+        </div>
+        <div class="toggle" id="toggleAutostart" onclick="toggleSetting('autostart')"></div>
+      </div>
+    </div>
+    <button class="btn-apply" onclick="closeSettings()">Appliquer &amp; Fermer</button>
+  </div>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
