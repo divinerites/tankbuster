@@ -21,6 +21,9 @@
   })
 </script>
 
+<!-- WebApp -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#05080b">
 
 <title>My Poker Shot Clock</title>
 <!-- Bunny Fonts — RGPD friendly, hébergé EU, aucun tracking Google -->
@@ -199,5 +202,12 @@
   </div>
 </div>
 <script src="app.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(console.error);
+    });
+  }
+</script>
 </body>
 </html>
