@@ -222,6 +222,31 @@ body::before{
 .btn-timebank:hover,.btn-timebank:active{background:rgba(245,158,11,0.22)}
 .btn-timebank:disabled{opacity:0.3;cursor:not-allowed}
 
+/* Bloc time bank */
+#timebankDisplay {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  font-family: 'Orbitron', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: #facc15; /* même couleur que ton time bank actuel */
+}
+/* Met en valeur le x1, x2... via un petit cadre discret */
+#timebankDisplay::after {
+  content: attr(data-multiplier);
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.5);
+  background: rgba(250, 204, 21, 0.08);
+
+  font-size: 12px;
+  font-weight: 700;
+  color: #facc15;
+}
+
 /* CONTROLS */
 .controls{width:100%;display:flex;gap:12px;align-items:center;justify-content:center}
 .btn-main{
