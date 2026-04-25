@@ -244,15 +244,49 @@ body::before{
 .btn-secondary:hover,.btn-secondary:active{background:var(--surface3);color:var(--text)}
 
 /* NEXT PLAYER */
-.btn-next{
-  width:100%;height:54px;border-radius:var(--radius-full);
-  font-family:var(--font-display);font-size:12px;font-weight:700;
-  letter-spacing:0.1em;text-transform:uppercase;
-  background:var(--surface2);border:1px solid var(--border);
-  color:var(--text-muted);cursor:pointer;transition:all 180ms ease;
-  display:flex;align-items:center;justify-content:center;gap:8px;
+.btn-next {
+  width: 192px;
+  height: 192px;
+  border-radius: 24px; /* carré avec coins arrondis */
+  font-family: 'Orbitron', monospace;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  background: linear-gradient(135deg, #06b6d4, #22c55e);
+  color: #020617;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  box-shadow: 0 22px 45px rgba(34, 211, 238, 0.45);
+  cursor: pointer;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    background 0.12s ease,
+    opacity 0.12s ease;
 }
-.btn-next:hover,.btn-next:active{background:var(--surface3);color:var(--text);border-color:rgba(255,255,255,0.15)}
+
+.btn-next span.icon {
+  font-size: 28px; /* par ex. → chevron ou flèche */
+}
+
+.btn-next:hover {
+  background: linear-gradient(135deg, #22d3ee, #4ade80);
+  box-shadow: 0 26px 55px rgba(34, 211, 238, 0.55);
+  opacity: 0.98;
+}
+
+.btn-next:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 14px 28px rgba(34, 211, 238, 0.35);
+}
 
 /* STATS */
 .stats-row{width:100%;display:flex;gap:8px}
