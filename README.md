@@ -7,11 +7,12 @@ Application web de shot clock poker, autonome, sans backend, 100% privacy-friend
 ## Structure
 
 ```
-poker-shot-clock/
-├── index.html      ← Structure HTML
-├── style.css       ← Styles (dark theme, animations, responsive)
-├── app.js          ← Logique JavaScript (timer, audio, localStorage)
-├── netlify.toml    ← En-têtes de sécurité HTTP
+my-poker-shot-clock/
+├── index.html            ← Structure HTML
+├── style.css             ← Styles (dark theme, animations, responsive)
+├── app.js                ← Logique JavaScript (timer, audio, localStorage)
+├── shot_clock_logo.png   ← Logo
+├── netlify.toml          ← En-têtes de sécurité HTTP
 └── README.md
 ```
 
