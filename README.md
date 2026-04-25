@@ -20,6 +20,10 @@ my-poker-shot-clock/
 ├── style.css             ← Styles (dark theme, animations, responsive)
 ├── app.js                ← Logique JavaScript (timer, audio, localStorage)
 ├── shot_clock_logo.png   ← Logo
+├── favicon.ico           ← Favicons
+├── favicon-16.png        ←    "
+├── favicon-32.png        ←    "
+├── favicon-64.png        ←    "
 ├── netlify.toml          ← En-têtes de sécurité HTTP
 └── README.md
 ```
