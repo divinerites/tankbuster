@@ -1,0 +1,4 @@
+# Redirects for plausible.io & github.com/divinerites/my-poker-shot-clock
+
+/misc/js/script_pa.js https://plausible.io/js/pa-OkOtlZxHFMw_5wCjPYYzA.js 200
+/misc/api/event https://plausible.io/api/event 200
