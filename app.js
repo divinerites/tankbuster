@@ -19,7 +19,7 @@ window.addEventListener('load', function(){
     const s = document.getElementById('splash');
     s.classList.add('hidden');
     s.addEventListener('transitionend', function(){ s.remove(); }, { once: true });
-  }, 5000);
+  }, 3000);
 });
 
 // ─── STATE ────────────────────────────────────────────────────
