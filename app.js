@@ -27,7 +27,6 @@ var settings = { duration:30, timebank:30, sound:true, vibration:true, autostart
 var state = {
   running:false, paused:false, remaining:30,
   timebankLeft:30, timebankUsed:false,
-  totalPlayers:0, totalTimeouts:0, totalActions:0, totalTime:0,
   interval:null
 };
 var CIRC = 659.73;
@@ -98,9 +97,6 @@ function startClock(){
     if(state.remaining<=3&&state.remaining>0) playBeep(1000,0.05,0.25);
     if(state.remaining<=0){
       clearInterval(state.interval); state.running=false; state.remaining=0;
-      state.totalTimeouts++; state.totalActions++;
-      document.getElementById('statTimeouts').textContent=state.totalTimeouts;
-      document.getElementById('statActions').textContent=state.totalActions;
       document.getElementById('phaseLabel').textContent='TEMPS ÉCOULÉ';
       playTimeout(); vibrate([200,100,200,100,300]);
       var card=document.getElementById('clockCard');
@@ -160,15 +156,7 @@ function updateBtn(){
 }
 function nextPlayer(){
   if(state.running||state.paused){
-    state.totalActions++; state.totalPlayers++;
-    var avg=state.totalPlayers>0?Math.round(state.totalTime/state.totalPlayers):0;
-    document.getElementById('statActions').textContent=state.totalActions;
-    document.getElementById('statPlayers').textContent=state.totalPlayers;
-    document.getElementById('statAvg').textContent=avg;
     playBeep(440,0.06,0.2); vibrate(30);
-  } else {
-    state.totalPlayers++;
-    document.getElementById('statPlayers').textContent=state.totalPlayers;
   }
   resetClock(true);
 }
