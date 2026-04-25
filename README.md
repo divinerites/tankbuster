@@ -4,9 +4,17 @@
 
 Application web de shot clock poker, autonome, sans backend, 100% privacy-friendly.
 
+![GitHub version](https://img.shields.io/github/v/tag/divinerites/my-poker-shot-clock?label=Version)
+![License](https://img.shields.io/github/license/divinerites/my-poker-shot-clock)
+![Last commit](https://img.shields.io/github/last-commit/divinerites/my-poker-shot-clock)
+
+Please, consider **leaving a star on Github if you like it**. ![Github Stars](https://img.shields.io/github/stars/divinerites/my-poker-shot-clock?style=social)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=divinerites/my-poker-shot-clock&type=Date)](https://star-history.com/#divinerites/my-poker-shot-clock&Date)
+
 ## Structure
 
-```
+```txt
 my-poker-shot-clock/
 ├── index.html            ← Structure HTML
 ├── style.css             ← Styles (dark theme, animations, responsive)
