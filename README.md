@@ -34,13 +34,13 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 </p>
 
 <p align="center">
-  <img src="./screenshots/mspc-fr.png" alt="Poker Shot Clock home screen" width="260">
-  <img src="./screenshots/mspc-en.png" alt="Poker Shot Clock home screen" width="260">
-  <img src="./screenshots/mspc-cs.png" alt="Poker Shot Clock home screen" width="260">
-  <img src="./screenshots/mspc-it.png" alt="Poker Shot Clock home screen" width="260">
-  <img src="./screenshots/mspc-nl.png" alt="Poker Shot Clock home screen" width="260">
-  <img src="./screenshots/mspc-ru.png" alt="Poker Shot Clock home screen" width="260">
-  <img src="./screenshots/mspc-zh.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-fr.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-en.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-cs.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-it.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-nl.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-ru.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-zh.png" alt="Poker Shot Clock home screen" width="260">
 </p>
 
 ## Structure
