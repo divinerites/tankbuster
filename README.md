@@ -19,24 +19,30 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 - 🎨 Couleurs progressives : vert → jaune → orange → rouge pulsant
 - 🔊 Alertes sonores Web Audio API (bips à 10s, 5s, timeout)
 - 📳 Vibration haptique (mobile)
-- 📊 Statistiques de session (joueurs, timeouts, moyenne)
 - 💾 Persistance des préférences via `localStorage`
-- 🌐 Bunny Fonts (RGPD, EU, zéro tracking Google)
+- 🌐 Bunny Fonts are now LOCAL.
+- Affichage des time bank utilisé dans une main
 - WebApp installable sur l'écran d'accueil
 
 ## Structure
 
 ```txt
 my-poker-shot-clock/
+├──
+   ├── fonts              ← Local fonts
+   ├── screenshots        ← Screenshot exemples
 ├── index.html            ← Structure HTML
 ├── style.css             ← Styles (dark theme, animations, responsive)
 ├── app.js                ← Logique JavaScript (timer, audio, localStorage)
+├── sw.js.                ← Service Worker
 ├── shot_clock_logo.png   ← Logo
 ├── favicon.ico           ← Favicons
 ├── favicon-16.png        ←    "
 ├── favicon-32.png        ←    "
 ├── favicon-64.png        ←    "
+├── manifest.webmanifest  ← PWA configuration
 ├── netlify.toml          ← En-têtes de sécurité HTTP
+├── _redirects            ← Redirect for Plausible on Netlify
 └── README.md
 ```
 
