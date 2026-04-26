@@ -58,7 +58,13 @@
   },
   "lang": {
     "label": "Langue",
-    "fr": "FR",
-    "en": "EN"
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
   }
 }

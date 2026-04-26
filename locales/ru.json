@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Загрузка…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Все права защищены"
+  },
+  "status": {
+    "waiting": "Ожидание",
+    "running": "Идёт отсчёт…",
+    "paused": "Пауза",
+    "timeout": "ВРЕМЯ ВЫШЛО"
+  },
+  "clock": {
+    "seconds": "СЕКУНДЫ",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "ИСПОЛЬЗОВАННЫЕ TIME BANK"
+  },
+  "actions": {
+    "use": "Использовать",
+    "start": "Старт",
+    "pause": "Пауза",
+    "resume": "Продолжить",
+    "nextPlayerLine1": "Следующий",
+    "nextPlayerLine2": "игрок",
+    "applyClose": "Применить и закрыть"
+  },
+  "settings": {
+    "title": "⚙ Настройки",
+    "shotClockDuration": "Длительность Shot Clock",
+    "timebankDuration": "Длительность Time Bank",
+    "none": "Нет",
+    "options": "Опции",
+    "alertSounds": "Звуковые сигналы",
+    "alertSoundsDesc": "Сигналы на 10 с, 5 с и при окончании времени",
+    "vibration": "Вибрация",
+    "vibrationDesc": "Тактильная отдача на мобильных устройствах",
+    "autostart": "Автостарт",
+    "autostartDesc": "Запускает таймер для следующего игрока"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Открыть настройки",
+    "timebanksUsed": "Использованные time bank в этой раздаче",
+    "timerControls": "Управление таймером",
+    "useTimebank": "Использовать time bank",
+    "reset": "Сброс",
+    "nextPlayer": "Следующий игрок",
+    "settingsDialog": "Настройки",
+    "toggleSound": "Включить или выключить звук",
+    "toggleVibration": "Включить или выключить вибрацию",
+    "toggleAutostart": "Включить или выключить автостарт",
+    "github": "Открыть GitHub"
+  },
+  "lang": {
+    "label": "Язык",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
+  }
+}

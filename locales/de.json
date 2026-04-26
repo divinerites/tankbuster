@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Laden…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "status": {
+    "waiting": "Bereit",
+    "running": "Läuft…",
+    "paused": "Pausiert",
+    "timeout": "ZEIT ABGELAUFEN"
+  },
+  "clock": {
+    "seconds": "SEKUNDEN",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "VERWENDETE TIME BANKS"
+  },
+  "actions": {
+    "use": "Nutzen",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "nextPlayerLine1": "Nächster",
+    "nextPlayerLine2": "Spieler",
+    "applyClose": "Anwenden & Schließen"
+  },
+  "settings": {
+    "title": "⚙ Einstellungen",
+    "shotClockDuration": "Shot-Clock-Dauer",
+    "timebankDuration": "Time-Bank-Dauer",
+    "none": "Keine",
+    "options": "Optionen",
+    "alertSounds": "Warnsignale",
+    "alertSoundsDesc": "Signaltöne bei 10 s, 5 s und Zeitablauf",
+    "vibration": "Vibration",
+    "vibrationDesc": "Haptisches Feedback auf Mobilgeräten",
+    "autostart": "Automatischer Start",
+    "autostartDesc": "Startet den Timer für den nächsten Spieler"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Einstellungen öffnen",
+    "timebanksUsed": "In dieser Hand verwendete Time Banks",
+    "timerControls": "Timer-Steuerung",
+    "useTimebank": "Eine Time Bank verwenden",
+    "reset": "Zurücksetzen",
+    "nextPlayer": "Nächster Spieler",
+    "settingsDialog": "Einstellungen",
+    "toggleSound": "Töne ein- oder ausschalten",
+    "toggleVibration": "Vibration ein- oder ausschalten",
+    "toggleAutostart": "Automatischen Start ein- oder ausschalten",
+    "github": "GitHub öffnen"
+  },
+  "lang": {
+    "label": "Sprache",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
+  }
+}

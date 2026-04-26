@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "加载中…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "保留所有权利"
+  },
+  "status": {
+    "waiting": "等待中",
+    "running": "计时中…",
+    "paused": "已暂停",
+    "timeout": "时间到"
+  },
+  "clock": {
+    "seconds": "秒",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "已使用的 TIME BANK"
+  },
+  "actions": {
+    "use": "使用",
+    "start": "开始",
+    "pause": "暂停",
+    "resume": "继续",
+    "nextPlayerLine1": "下一位",
+    "nextPlayerLine2": "玩家",
+    "applyClose": "应用并关闭"
+  },
+  "settings": {
+    "title": "⚙ 设置",
+    "shotClockDuration": "Shot Clock 时长",
+    "timebankDuration": "Time Bank 时长",
+    "none": "无",
+    "options": "选项",
+    "alertSounds": "提示音",
+    "alertSoundsDesc": "在 10 秒、5 秒和超时时发出提示音",
+    "vibration": "震动",
+    "vibrationDesc": "移动设备上的触觉反馈",
+    "autostart": "自动开始",
+    "autostartDesc": "为下一位玩家自动启动计时器"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "打开设置",
+    "timebanksUsed": "本手牌已使用的 time bank",
+    "timerControls": "计时器控制",
+    "useTimebank": "使用一个 time bank",
+    "reset": "重置",
+    "nextPlayer": "下一位玩家",
+    "settingsDialog": "设置",
+    "toggleSound": "开启或关闭声音",
+    "toggleVibration": "开启或关闭震动",
+    "toggleAutostart": "开启或关闭自动开始",
+    "github": "打开 GitHub"
+  },
+  "lang": {
+    "label": "语言",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
+  }
+}

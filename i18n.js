@@ -1,6 +1,6 @@
 (function () {
-  var SUPPORTED_LANGS = ['fr', 'en'];
-  var DEFAULT_LANG = 'fr';
+  var SUPPORTED_LANGS = ['fr', 'en', 'de', 'it', 'ru', 'zh-Hans', 'nl', 'cs'];
+  var DEFAULT_LANG = 'en';
   var STORAGE_KEY = 'psc_lang';
   var messages = {};
   var currentLang = DEFAULT_LANG;
@@ -26,13 +26,22 @@
   }
 
   function detectInitialLang() {
-    var stored = safeLocalStorageGet(STORAGE_KEY);
-    if (stored && SUPPORTED_LANGS.indexOf(stored) !== -1) return stored;
+  var stored = safeLocalStorageGet(STORAGE_KEY);
+  if (stored && SUPPORTED_LANGS.indexOf(stored) !== -1) return stored;
 
-    var browserLang = (navigator.language || '').toLowerCase();
-    if (browserLang.startsWith('en')) return 'en';
-    return 'fr';
-  }
+  var browserLang = (navigator.language || '').toLowerCase();
+
+  if (browserLang.startsWith('de')) return 'de';
+  if (browserLang.startsWith('it')) return 'it';
+  if (browserLang.startsWith('ru')) return 'ru';
+  if (browserLang.startsWith('nl')) return 'nl';
+  if (browserLang.startsWith('cs')) return 'cs';
+  if (browserLang.startsWith('zh')) return 'zh-Hans';
+  if (browserLang.startsWith('en')) return 'en';
+
+  return 'fr';
+}
+
 
   function t(key, fallback) {
     var value = get(messages, key);

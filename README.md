@@ -23,6 +23,7 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 - 🌐 Bunny Fonts are now LOCAL.
 - Affichage des time bank utilisé dans une main
 - WebApp installable sur l'écran d'accueil
+- Multi language : Français,English, Deutsch, Italiano, Русский, 简体中文, 语言, Nederlands, Čeština
 
 ## Screenshots
 
@@ -30,6 +31,16 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
   <img src="./screenshots/StartingScreen-3.png" alt="Poker Shot Clock home screen" width="260">
   <img src="./screenshots/Running clock-3.png" alt="Poker Shot Clock settings screen" width="260">
   <img src="./screenshots/RunningClock-warning-3.png" alt="Poker Shot Clock time bank screen" width="260">
+</p>
+
+<p align="center">
+  <img src="./screenshots/mspc-fr.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mspc-en.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mspc-cs.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mspc-it.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mspc-nl.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mspc-ru.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mspc-zh.png" alt="Poker Shot Clock home screen" width="260">
 </p>
 
 ## Structure

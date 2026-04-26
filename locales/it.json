@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Caricamento…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Tutti i diritti riservati"
+  },
+  "status": {
+    "waiting": "In attesa",
+    "running": "In corso…",
+    "paused": "In pausa",
+    "timeout": "TEMPO SCADUTO"
+  },
+  "clock": {
+    "seconds": "SECONDI",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "TIME BANK USATE"
+  },
+  "actions": {
+    "use": "Usa",
+    "start": "Avvia",
+    "pause": "Pausa",
+    "resume": "Riprendi",
+    "nextPlayerLine1": "Giocatore",
+    "nextPlayerLine2": "successivo",
+    "applyClose": "Applica & Chiudi"
+  },
+  "settings": {
+    "title": "⚙ Impostazioni",
+    "shotClockDuration": "Durata dello Shot Clock",
+    "timebankDuration": "Durata del Time Bank",
+    "none": "Nessuno",
+    "options": "Opzioni",
+    "alertSounds": "Suoni di avviso",
+    "alertSoundsDesc": "Segnali a 10 s, 5 s e allo scadere",
+    "vibration": "Vibrazione",
+    "vibrationDesc": "Feedback aptico su mobile",
+    "autostart": "Avvio automatico",
+    "autostartDesc": "Avvia il timer per il giocatore successivo"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Apri impostazioni",
+    "timebanksUsed": "Time bank usate in questa mano",
+    "timerControls": "Controlli del timer",
+    "useTimebank": "Usa un time bank",
+    "reset": "Reimposta",
+    "nextPlayer": "Giocatore successivo",
+    "settingsDialog": "Impostazioni",
+    "toggleSound": "Attiva o disattiva i suoni",
+    "toggleVibration": "Attiva o disattiva la vibrazione",
+    "toggleAutostart": "Attiva o disattiva l’avvio automatico",
+    "github": "Apri GitHub"
+  },
+  "lang": {
+    "label": "Lingua",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
+  }
+}

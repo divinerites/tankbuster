@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Laden…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Alle rechten voorbehouden"
+  },
+  "status": {
+    "waiting": "Wachten",
+    "running": "Bezig…",
+    "paused": "Gepauzeerd",
+    "timeout": "TIJD VOORBIJ"
+  },
+  "clock": {
+    "seconds": "SECONDEN",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "GEBRUIKTE TIME BANKS"
+  },
+  "actions": {
+    "use": "Gebruik",
+    "start": "Start",
+    "pause": "Pauze",
+    "resume": "Hervatten",
+    "nextPlayerLine1": "Volgende",
+    "nextPlayerLine2": "speler",
+    "applyClose": "Toepassen & Sluiten"
+  },
+  "settings": {
+    "title": "⚙ Instellingen",
+    "shotClockDuration": "Shot Clock-duur",
+    "timebankDuration": "Time Bank-duur",
+    "none": "Geen",
+    "options": "Opties",
+    "alertSounds": "Waarschuwingsgeluiden",
+    "alertSoundsDesc": "Pieptonen bij 10 s, 5 s en timeout",
+    "vibration": "Trilling",
+    "vibrationDesc": "Haptische feedback op mobiel",
+    "autostart": "Automatisch starten",
+    "autostartDesc": "Start de timer voor de volgende speler"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Instellingen openen",
+    "timebanksUsed": "Gebruikte time banks in deze hand",
+    "timerControls": "Timerbediening",
+    "useTimebank": "Een time bank gebruiken",
+    "reset": "Resetten",
+    "nextPlayer": "Volgende speler",
+    "settingsDialog": "Instellingen",
+    "toggleSound": "Geluid in- of uitschakelen",
+    "toggleVibration": "Trilling in- of uitschakelen",
+    "toggleAutostart": "Automatisch starten in- of uitschakelen",
+    "github": "GitHub openen"
+  },
+  "lang": {
+    "label": "Taal",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Načítání…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Všechna práva vyhrazena"
+  },
+  "status": {
+    "waiting": "Čekání",
+    "running": "Probíhá…",
+    "paused": "Pozastaveno",
+    "timeout": "ČAS VYPRŠEL"
+  },
+  "clock": {
+    "seconds": "SEKUNDY",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "POUŽITÉ TIME BANKY"
+  },
+  "actions": {
+    "use": "Použít",
+    "start": "Start",
+    "pause": "Pauza",
+    "resume": "Pokračovat",
+    "nextPlayerLine1": "Další",
+    "nextPlayerLine2": "hráč",
+    "applyClose": "Použít a zavřít"
+  },
+  "settings": {
+    "title": "⚙ Nastavení",
+    "shotClockDuration": "Délka Shot Clocku",
+    "timebankDuration": "Délka Time Bank",
+    "none": "Žádná",
+    "options": "Možnosti",
+    "alertSounds": "Zvuková upozornění",
+    "alertSoundsDesc": "Pípnutí při 10 s, 5 s a vypršení času",
+    "vibration": "Vibrace",
+    "vibrationDesc": "Haptická odezva na mobilu",
+    "autostart": "Automatický start",
+    "autostartDesc": "Spustí časovač pro dalšího hráče"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Otevřít nastavení",
+    "timebanksUsed": "Použité time banky v této hře",
+    "timerControls": "Ovládání časovače",
+    "useTimebank": "Použít time bank",
+    "reset": "Resetovat",
+    "nextPlayer": "Další hráč",
+    "settingsDialog": "Nastavení",
+    "toggleSound": "Zapnout nebo vypnout zvuky",
+    "toggleVibration": "Zapnout nebo vypnout vibrace",
+    "toggleAutostart": "Zapnout nebo vypnout automatický start",
+    "github": "Otevřít GitHub"
+  },
+  "lang": {
+    "label": "Jazyk",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština"
+  }
+}
