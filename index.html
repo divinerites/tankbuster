@@ -114,6 +114,7 @@
 
     <section class="controls" data-i18n-aria-label="aria.timerControls" aria-label="Contrôles du timer">
       <button id="btnMain" class="btn-main btn-start" type="button" onclick="toggleClock()">
+        <svg id="btnIcon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"></svg>
         <span id="btnLabel" data-i18n="actions.start">Démarrer</span>
       </button>
 
@@ -122,10 +123,11 @@
       </button>
 
       <button class="btn-next" type="button" onclick="nextPlayer()" data-i18n-aria-label="aria.nextPlayer" aria-label="Joueur suivant">
-        <span class="icon">➜</span>
+        <span class="icon next-player-icon">⏭</span>
         <span data-i18n="actions.nextPlayerLine1">Joueur</span>
         <span data-i18n="actions.nextPlayerLine2">suivant</span>
       </button>
+
     </section>
 
     <footer class="footer">
