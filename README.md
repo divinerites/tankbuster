@@ -24,6 +24,14 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 - Affichage des time bank utilisé dans une main
 - WebApp installable sur l'écran d'accueil
 
+## Screenshots
+
+<p align="center">
+  <img src="./screenshots/Running clock-3.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/Running clock-3.png" alt="Poker Shot Clock settings screen" width="260">
+  <img src="./screenshots/RunningClock-warning-3.png" alt="Poker Shot Clock time bank screen" width="260">
+</p>
+
 ## Structure
 
 ```txt
