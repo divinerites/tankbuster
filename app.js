@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
       },
       { once: true }
     );
-  }, 3000);
+  }, 5000);
 });
 
 var settings = {
