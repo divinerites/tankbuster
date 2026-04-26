@@ -33,9 +33,12 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
   <img src="./screenshots/RunningClock-warning-3.png" alt="Poker Shot Clock time bank screen" width="260">
 </p>
 
+## Languages
+
 <p align="center">
   <img src="./screenshots/mpsc-fr.png" alt="Poker Shot Clock home screen" width="260">
   <img src="./screenshots/mpsc-en.png" alt="Poker Shot Clock home screen" width="260">
+  <img src="./screenshots/mpsc-nl.png" alt="Poker Shot Clock home screen" width="260">
   <img src="./screenshots/mpsc-cs.png" alt="Poker Shot Clock home screen" width="260">
   <img src="./screenshots/mpsc-it.png" alt="Poker Shot Clock home screen" width="260">
   <img src="./screenshots/mpsc-nl.png" alt="Poker Shot Clock home screen" width="260">
@@ -50,6 +53,7 @@ my-poker-shot-clock/
 ├──
    ├── fonts              ← Local fonts
    ├── screenshots        ← Screenshot exemples
+   ├── locales.           ← translations
 ├── index.html            ← Structure HTML
 ├── style.css             ← Styles (dark theme, animations, responsive)
 ├── app.js                ← Logique JavaScript (timer, audio, localStorage)
