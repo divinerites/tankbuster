@@ -459,6 +459,20 @@ function syncSettingsUI() {
   if (toggleAutostart) toggleAutostart.classList.toggle('on', settings.autostart);
 }
 
+async function loadVersion() {
+  try {
+    const res = await fetch('./version.json');
+    const data = await res.json();
+
+    document.querySelectorAll('[data-app-version]').forEach(function (el) {
+      el.textContent = data.version;
+    });
+  } catch (e) {
+    console.error('Version loading error:', e);
+  }
+}
+
+
 window.onLanguageChanged = function () {
   updateTimebankDisplay();
   updateBtn();
@@ -478,6 +492,7 @@ window.onLanguageChanged = function () {
 };
 
 loadSettings();
+loadVersion();
 syncSettingsUI();
 resetClock();
 updateRing(settings.duration, settings.duration);
