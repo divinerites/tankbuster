@@ -39,6 +39,13 @@ var CIRC = 659.73;
 var STORAGE_KEY = 'psc_settings_v1';
 var audioCtx = null;
 
+function t(key, fallback) {
+  if (window.i18n && typeof window.i18n.t === 'function') {
+    return window.i18n.t(key, fallback);
+  }
+  return fallback || key;
+}
+
 function getAudioCtx() {
   if (!audioCtx) {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -202,12 +209,14 @@ function updateBtn() {
     btn.classList.remove('btn-start');
     btn.classList.add('btn-pause');
     icon.innerHTML = '';
-    lbl.textContent = 'Pause';
+    lbl.textContent = t('actions.pause', 'Pause');
   } else {
     btn.classList.remove('btn-pause');
     btn.classList.add('btn-start');
     icon.innerHTML = '';
-    lbl.textContent = state.paused ? 'Reprendre' : 'Démarrer';
+    lbl.textContent = state.paused
+      ? t('actions.resume', 'Reprendre')
+      : t('actions.start', 'Démarrer');
   }
 }
 
@@ -221,7 +230,7 @@ function startClock() {
   updateBtn();
 
   var phase = document.getElementById('phaseLabel');
-  if (phase) phase.textContent = 'En cours…';
+  if (phase) phase.textContent = t('status.running', 'En cours…');
 
   state.interval = setInterval(function () {
     state.remaining--;
@@ -248,7 +257,7 @@ function startClock() {
       state.running = false;
       state.remaining = 0;
 
-      if (phase) phase.textContent = 'TEMPS ÉCOULÉ';
+      if (phase) phase.textContent = t('status.timeout', 'TEMPS ÉCOULÉ');
 
       playTimeout();
       vibrate([200, 100, 200, 100, 300]);
@@ -281,7 +290,7 @@ function pauseClock() {
   state.paused = true;
 
   var phase = document.getElementById('phaseLabel');
-  if (phase) phase.textContent = 'En pause';
+  if (phase) phase.textContent = t('status.paused', 'En pause');
 
   updateBtn();
   updateStateClass(state.remaining, settings.duration);
@@ -298,7 +307,7 @@ function resetClock(auto) {
   var phase = document.getElementById('phaseLabel');
   var clockTime = document.getElementById('clockTime');
 
-  if (phase) phase.textContent = 'En attente';
+  if (phase) phase.textContent = t('status.waiting', 'En attente');
   if (clockTime) clockTime.textContent = settings.duration;
 
   updateTimebankDisplay();
@@ -449,6 +458,24 @@ function syncSettingsUI() {
   if (toggleVibration) toggleVibration.classList.toggle('on', settings.vibration);
   if (toggleAutostart) toggleAutostart.classList.toggle('on', settings.autostart);
 }
+
+window.onLanguageChanged = function () {
+  updateTimebankDisplay();
+  updateBtn();
+
+  var phase = document.getElementById('phaseLabel');
+  if (!phase) return;
+
+  if (state.running) {
+    phase.textContent = t('status.running', 'En cours…');
+  } else if (state.paused) {
+    phase.textContent = t('status.paused', 'En pause');
+  } else if (state.remaining <= 0) {
+    phase.textContent = t('status.timeout', 'TEMPS ÉCOULÉ');
+  } else {
+    phase.textContent = t('status.waiting', 'En attente');
+  }
+};
 
 loadSettings();
 syncSettingsUI();

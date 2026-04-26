@@ -972,6 +972,52 @@ body::before {
   transform: scale(0.98);
 }
 
+/* LANGUAGES */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-switcher-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+.lang-switcher-icon {
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.lang-switcher {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  padding-right: 2px;
+}
+
+.lang-switcher option {
+  background: var(--surface);
+  color: var(--text);
+}
+
 /* Animations */
 
 @keyframes flashRed {
@@ -1035,4 +1081,28 @@ body::before {
     width: 50px;
     height: 50px;
   }
+}
+
+
+.btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnIcon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  margin-right: 10px;
+}
+
+#btnIcon:empty {
+  display: none;
+  margin-right: 0;
+}
+
+#btnLabel {
+  display: inline-block;
+  text-align: center;
 }

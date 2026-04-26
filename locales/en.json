@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Loading…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "All rights reserved"
+  },
+  "status": {
+    "waiting": "Waiting",
+    "running": "Running…",
+    "paused": "Paused",
+    "timeout": "TIME OUT"
+  },
+  "clock": {
+    "seconds": "SECONDS",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "TIME BANK USED"
+  },
+  "actions": {
+    "use": "Use",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "nextPlayerLine1": "Next",
+    "nextPlayerLine2": "player",
+    "applyClose": "Apply & Close"
+  },
+  "settings": {
+    "title": "⚙ Settings",
+    "shotClockDuration": "Shot Clock Duration",
+    "timebankDuration": "Time Bank Duration",
+    "none": "None",
+    "options": "Options",
+    "alertSounds": "Alert sounds",
+    "alertSoundsDesc": "Beeps at 10s, 5s and timeout",
+    "vibration": "Vibration",
+    "vibrationDesc": "Haptic feedback on mobile",
+    "autostart": "Auto-start",
+    "autostartDesc": "Starts the timer for the next player"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence -"
+  },
+  "aria": {
+    "openSettings": "Open settings",
+    "timebanksUsed": "Time banks used this hand",
+    "timerControls": "Timer controls",
+    "useTimebank": "Use a time bank",
+    "reset": "Reset",
+    "nextPlayer": "Next player",
+    "settingsDialog": "Settings",
+    "toggleSound": "Enable or disable sounds",
+    "toggleVibration": "Enable or disable vibration",
+    "toggleAutostart": "Enable or disable auto-start",
+    "github": "Open GitHub"
+  },
+  "lang": {
+    "label": "Language",
+    "fr": "FR",
+    "en": "EN"
+  }
+}
