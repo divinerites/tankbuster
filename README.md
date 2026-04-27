@@ -1,8 +1,6 @@
 # 🃏 My Poker Shot Clock
 
-> © 2026 by Divinerites — [GPL Licence](https://www.gnu.org/licenses/gpl-3.0.html)
-
-Application web de shot clock poker, autonome, sans backend, 100% privacy-friendly.
+Application web de shot clock poker, autonome, sans backend, 100% privacy-friendly. Multilangue. WebApp.
 
 ![GitHub version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmypokershotclock.netlify.app%2Fversion.json&query=%24.version)
 ![License](https://img.shields.io/github/license/divinerites/my-poker-shot-clock)
@@ -92,3 +90,5 @@ Ouvrir `index.html` directement dans un navigateur.
 ## Licence
 
 Ce projet est distribué sous licence [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
+
+> © 2026 by Divinerites
