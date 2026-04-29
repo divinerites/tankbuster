@@ -3,13 +3,13 @@
 A Poker Shot Clock - Free - Running inside your browser.
 100% privacy-friendly. Multilanguage. WebApp.
 
-![GitHub version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmypokershotclock.netlify.app%2Fversion.json&query=%24.version)
-![License](https://img.shields.io/github/license/divinerites/my-poker-shot-clock)
-![Last commit](https://img.shields.io/github/last-commit/divinerites/my-poker-shot-clock)
+![GitHub version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%tankbuster.netlify.app%2Fversion.json&query=%24.version)
+![License](https://img.shields.io/github/license/divinerites/tankbuster)
+![Last commit](https://img.shields.io/github/last-commit/divinerites/tankbuster)
 
 Please, consider **leaving a star on Github if you like it**. ![Github Stars](https://img.shields.io/github/stars/divinerites/my-poker-shot-clock?style=social)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=divinerites/my-poker-shot-clock&type=Date)](https://star-history.com/#divinerites/my-poker-shot-clock&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=divinerites/tankbuster&type=Date)](https://star-history.com/#divinerites/my-poker-shot-clock&Date)
 
 ## Fonctionnalités
 
