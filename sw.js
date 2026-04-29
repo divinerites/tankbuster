@@ -1,4 +1,4 @@
-// sw.js - service worker minimal pour My Poker ShotClock
+// sw.js - service worker minimal pour TankBuster
 
 self.addEventListener('install', event => {
   // on passe immédiatement à l'étape suivante

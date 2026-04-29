@@ -1,7 +1,7 @@
 {
-  "name": "My Poker ShotClock",
-  "short_name": "MyPokerShotClock",
-  "description": "Shot clock de poker libre et gratuit, utilisable directement dans le navigateur.",
+  "name": "TankBuster",
+  "short_name": "TankBuster",
+  "description": "No more tanking. Shot clock poker libre et gratuit, utilisable directement dans le navigateur",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

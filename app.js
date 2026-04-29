@@ -1,5 +1,5 @@
 /**
- * My Poker Shot Clock — app.js
+ * TankBuster — app.js
  * © 2026 by Divinerites — GPL Licence
  */
 
