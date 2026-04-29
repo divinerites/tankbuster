@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "A carregar…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Todos os direitos reservados"
+  },
+  "status": {
+    "waiting": "Em espera",
+    "running": "Em andamento…",
+    "paused": "Em pausa",
+    "timeout": "TEMPO ESGOTADO"
+  },
+  "clock": {
+    "seconds": "SEGUNDOS",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "TIME BANK USADOS"
+  },
+  "actions": {
+    "use": "Usar",
+    "start": "Iniciar",
+    "pause": "Pausa",
+    "resume": "Retomar",
+    "nextPlayerLine1": "Próximo",
+    "nextPlayerLine2": "jogador",
+    "applyClose": "Aplicar e fechar"
+  },
+  "settings": {
+    "title": "⚙ Definições",
+    "shotClockDuration": "Duração do Shot Clock",
+    "timebankDuration": "Duração do Time Bank",
+    "none": "Nenhum",
+    "options": "Opções",
+    "alertSounds": "Sons de alerta",
+    "alertSoundsDesc": "Bipes aos 10 s, 5 s e no timeout",
+    "vibration": "Vibração",
+    "vibrationDesc": "Feedback háptico no telemóvel",
+    "autostart": "Arranque automático",
+    "autostartDesc": "Inicia o temporizador para o próximo jogador"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Abrir definições",
+    "timebanksUsed": "Time banks usados nesta mão",
+    "timerControls": "Controlos do temporizador",
+    "useTimebank": "Usar um time bank",
+    "reset": "Repor",
+    "nextPlayer": "Próximo jogador",
+    "settingsDialog": "Definições",
+    "toggleSound": "Ativar ou desativar sons",
+    "toggleVibration": "Ativar ou desativar vibração",
+    "toggleAutostart": "Ativar ou desativar arranque automático",
+    "github": "Abrir GitHub"
+  },
+  "lang": {
+    "label": "Idioma",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština",
+    "es": "Español",
+    "pt": "Português"
+  }
+}

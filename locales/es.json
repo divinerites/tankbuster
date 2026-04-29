@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "appTitle": "My Poker Shot Clock"
+  },
+  "splash": {
+    "loading": "Cargando…",
+    "copyright": "© 2026 by Divinerites · GPL Licence",
+    "rights": "Todos los derechos reservados"
+  },
+  "status": {
+    "waiting": "En espera",
+    "running": "En marcha…",
+    "paused": "Pausado",
+    "timeout": "TIEMPO AGOTADO"
+  },
+  "clock": {
+    "seconds": "SEGUNDOS",
+    "timebankTitle": "⚡ Time Bank",
+    "timebankUsed": "TIME BANK USADAS"
+  },
+  "actions": {
+    "use": "Usar",
+    "start": "Iniciar",
+    "pause": "Pausa",
+    "resume": "Reanudar",
+    "nextPlayerLine1": "Siguiente",
+    "nextPlayerLine2": "jugador",
+    "applyClose": "Aplicar y cerrar"
+  },
+  "settings": {
+    "title": "⚙ Ajustes",
+    "shotClockDuration": "Duración del Shot Clock",
+    "timebankDuration": "Duración del Time Bank",
+    "none": "Ninguno",
+    "options": "Opciones",
+    "alertSounds": "Sonidos de alerta",
+    "alertSoundsDesc": "Pitidos a los 10 s, 5 s y al agotarse el tiempo",
+    "vibration": "Vibración",
+    "vibrationDesc": "Respuesta háptica en móvil",
+    "autostart": "Inicio automático",
+    "autostartDesc": "Lanza el temporizador para el siguiente jugador"
+  },
+  "footer": {
+    "copyright": "© 2026 by Divinerites · GPL Licence - v"
+  },
+  "aria": {
+    "openSettings": "Abrir ajustes",
+    "timebanksUsed": "Time banks usados en esta mano",
+    "timerControls": "Controles del temporizador",
+    "useTimebank": "Usar un time bank",
+    "reset": "Reiniciar",
+    "nextPlayer": "Siguiente jugador",
+    "settingsDialog": "Ajustes",
+    "toggleSound": "Activar o desactivar sonidos",
+    "toggleVibration": "Activar o desactivar vibración",
+    "toggleAutostart": "Activar o desactivar inicio automático",
+    "github": "Abrir GitHub"
+  },
+  "lang": {
+    "label": "Idioma",
+    "fr": "Français",
+    "en": "English",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "ru": "Русский",
+    "zh-Hans": "简体中文",
+    "nl": "Nederlands",
+    "cs": "Čeština",
+    "es": "Español",
+    "pt": "Português"
+  }
+}
