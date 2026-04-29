@@ -22,7 +22,8 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 - 🌐 Bunny Fonts are now LOCAL.
 - Affichage des time bank utilisé dans une main
 - WebApp installable sur l'écran d'accueil
-- Multi language : Français, English, Deutsch, Italiano, Русский, 语言, Nederlands, Čeština
+- Works on Tablet, Computer and small phone screens.
+- Multi language : Français, English, Deutsch, Italiano, Русский, 语言, Nederlands, Čeština, Español, Português
 
 ## Screenshots
 
