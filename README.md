@@ -48,7 +48,7 @@ Please, consider **leaving a star on Github if you like it**. ![Github Stars](ht
 ## Structure
 
 ```txt
-my-poker-shot-clock/
+tankbuster/
 ├──
    ├── fonts              ← Local fonts
    ├── screenshots        ← Screenshot exemples
@@ -70,8 +70,8 @@ my-poker-shot-clock/
 
 ## Application
 
-- Sources Github : https://github.com/divinerites/my-poker-shot-clock
-- Application : https://mypokershotclock.netlify.app/
+- Sources Github : https://github.com/divinerites/tankbuster
+- Application : https://tankbuster.netlify.app/
 
 ## WebApp
 
