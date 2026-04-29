@@ -465,8 +465,8 @@ body::before {
 
 .timebank-used__rail {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;   /* Interdit le retour à la ligne */
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 6px 8px;    /* Plus compact */
   gap: 4px;            /* Espace entre les jetons */
   border-radius: 999px;
@@ -1090,15 +1090,11 @@ body::before {
   }
 
   .timebank-used {
-    flex-direction: column !important; /* Titre au-dessus, jetons en-dessous */
     align-items: center;
     gap: 4px;
   }
 
-  /* Le rail reste une ligne unique */
-  .timebank-usedrail {
-    display: flex;
-    flex-direction: row !important;
+  .timebank-used__rail {
     flex-wrap: nowrap;
     width: auto;
     gap: 4px;
@@ -1132,8 +1128,41 @@ body::before {
     stroke-dasharray: 565.49;
   }
 
+  .timebank-used__rail {
+    flex-direction: row !important; /* Force l'horizontal sur mobile */
+    flex-wrap: nowrap !important;
+  }
   .tb-slot {
     width: 32px;
     height: 32px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 820px) {
+  /* On force la colonne pour avoir titre puis rail */
+  .timebank-used {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 8px !important; /* Petit espace entre les deux lignes */
+  }
+
+  /* Le label en haut */
+  .timebank-used__label {
+    display: block !important;
+    width: auto !important;
+    text-align: center;
+  }
+
+  /* Le rail en dessous, en ligne */
+  .timebank-used__rail {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    width: auto !important;
+    padding: 6px 8px !important;
   }
 }
