@@ -1,4 +1,4 @@
-# 🃏 My Poker Shot Clock
+# 🃏 TankBuster - No More Tanking
 
 Application web de shot clock poker, autonome, sans backend, 100% privacy-friendly. Multilangue. WebApp.
 
