@@ -47,7 +47,6 @@
 </head>
 <body>
   <!-- AFFICHAGE DE L'APPLI -->
-  <div id="app-content">
   <div id="splash" aria-hidden="true">
     <img src="./logo.png" alt="" class="splash-logo" />
     <div class="splash-title">TankBuster<br /><span>No More Tanking</span></div>
@@ -237,51 +236,10 @@
       </button>
     </aside>
   </div>
-  </div>
   <!-- END OF APP -->
-
-  <!-- WARNING FOR PHONES -->
-  <div id="mobile-message">
-    <!-- Nom de l'appli en haut -->
-    <div class="app-brand">TankBuster</div>
-
-    <img src="./logo.png" alt="Logo" class="splash-logo" style="max-width: 120px; margin-bottom: 2rem;" />
-
-    <!-- Message principal -->
-    <div class="error-main">
-      Currently available only on<br>tablets or computers
-    </div>
-
-    <!-- Message secondaire -->
-    <div class="error-sub">
-      Mobile Phone version coming soon
-    </div>
-  </div>
-  <!-- END WARNING FOR PHONES -->
 
   <script src="./i18n.js"></script>
   <script src="./app.js"></script>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      // On considère qu'un écran de moins de 768px est un téléphone
-      const isSmallScreen = window.innerWidth < 768;
-
-      const app = document.getElementById('app-content');
-      const msg = document.getElementById('mobile-message');
-
-      if (isSmallScreen) {
-        if(msg) msg.style.display = 'flex';
-        if(app) app.style.display = 'none';
-        console.log("Mode écran petit : Message affiché");
-      } else {
-        if(app) app.style.display = 'block';
-        if(msg) msg.style.display = 'none';
-        console.log("Mode écran large : App affichée");
-      }
-    });
-  </script>
-
 
 </body>
 </html>
