@@ -451,7 +451,7 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 6px; /* Réduit l'espace vertical */
   width: 112px;
 }
 
@@ -465,9 +465,10 @@ body::before {
 
 .timebank-used__rail {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 14px 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;   /* Interdit le retour à la ligne */
+  padding: 6px 8px;    /* Plus compact */
+  gap: 4px;            /* Espace entre les jetons */
   border-radius: 999px;
   background:
     linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
@@ -723,36 +724,46 @@ body::before {
 }
 
 .btn-next {
-  width: 192px;
-  height: 192px;
-  border-radius: 24px;
-  font-family: 'Orbitron', monospace;
+  width: 240px;
+  height: 62px;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-display);
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   background: linear-gradient(135deg, #06b6d4, #22c55e);
   color: #020617;
   border: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Forcé en ligne */
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  box-shadow: 0 22px 45px rgba(34, 211, 238, 0.45);
+  gap: 10px;
   cursor: pointer;
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, opacity 0.12s ease;
+  overflow: hidden; /* Garantit que rien ne dépasse */
+  position: relative;
 }
 
 .btn-next span.icon {
-  display: inline-flex;
+  display: flex; /* Flex pour centrer l'icône */
   align-items: center;
   justify-content: center;
-  font-size: 44px;
-  line-height: 1;
-  margin-bottom: 4px;
-  text-shadow: 0 4px 14px rgba(2, 6, 23, 0.18);
-  transform: translateY(-1px);
+  font-size: 24px;
+  margin-bottom: 0 !important; /* Force l'annulation de l'ancien style */
+  transform: none !important;
+}
+
+/* Force le conteneur de texte à se comporter correctement */
+.btn-next .next-player-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.btn-next span[data-i18n] {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-next:hover {
@@ -1076,19 +1087,30 @@ body::before {
   }
 
   .timebank-used {
-    width: auto;
+    flex-direction: column !important; /* Titre au-dessus, jetons en-dessous */
+    align-items: center;
+    gap: 4px;
   }
 
-  .timebank-used__rail {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: min(100%, 420px);
-    border-radius: 24px;
+  /* Le rail reste une ligne unique */
+  .timebank-usedrail {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 4px;
+    padding: 4px;
+  }
+
+  /* Les jetons plus petits */
+  .tb-slot {
+    width: 32px !important;
+    height: 32px !important;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
+
   .clock-main {
     width: 190px;
     height: 190px;
@@ -1108,7 +1130,7 @@ body::before {
   }
 
   .tb-slot {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
   }
 }
