@@ -38,6 +38,8 @@
   if (browserLang.startsWith('cs')) return 'cs';
   if (browserLang.startsWith('zh')) return 'zh-Hans';
   if (browserLang.startsWith('en')) return 'en';
+  if (browserLang.startsWith('es')) return 'es';
+  if (browserLang.startsWith('pt')) return 'pt';
 
   return 'fr';
 }
