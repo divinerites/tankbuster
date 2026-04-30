@@ -1,5 +1,5 @@
 (function () {
-  var SUPPORTED_LANGS = ['fr', 'en', 'de', 'it', 'ru', 'zh-Hans', 'nl', 'cs'];
+  var SUPPORTED_LANGS = ['fr', 'en', 'de', 'it', 'ru', 'es', 'pt', 'zh-Hans', 'nl', 'cs'];
   var DEFAULT_LANG = 'en';
   var STORAGE_KEY = 'psc_lang';
   var messages = {};
